@@ -41,7 +41,21 @@ router.post('/', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-    res.status(200).send('Note successfully removed.')
+    const { id } = req.params;
+  
+    req.remove(id)
+        .then(removed => {
+            if (removed) {
+                res.status(204).end();
+            } else {
+                res.status(404).json({message: "Not found"})
+            }
+        })
+        .catch(err => {
+            res.status(500).json({ err })
+        })
+        // res.status(200).send('Note successfully removed.')
+    
 });
 
 module.exports  = router;
