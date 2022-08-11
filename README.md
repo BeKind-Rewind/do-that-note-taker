@@ -38,7 +38,13 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ## Tests
 test folders labeled for testing the code using $ node test 
 
+## Screenshots
+![Do That Note Taker index page](./images/screenshot1.png)
+![Notes page: saved notes are listed on left, entry fields on right for new notes.](./images/screenshot2.png)
+![Example of new note entry displays a "save" icon in upper right.](./images/screenshot3.png)
 
+## Video Tutorial
+https://watch.screencastify.com/v/NGccOeysTAmU9xSey01E
 
 ## Installation
 Frontend:
